@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student • Send mic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body>
+    <header><b>Student</b> • Send mic to backend (16kHz PCM via WebSocket)</header>
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <input id="name" placeholder="Your name" />
+          <button id="connect" class="primary">Connect & Start Mic</button>
+          <span id="status" class="badge">idle</span>
+        </div>
+        <div style="margin-top:12px;"><div class="meter"><div id="level"></div></div></div>
+        <div class="small" id="hint" style="margin-top:8px;">When connected, this page streams float32 PCM @16k to /ws/student</div>
+      </div>
+    </div>
+    <script src="/frontend/scripts/client.js"></script>
+  </body>
+</html>

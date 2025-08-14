@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teacher Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body>
+    <header><b>Teacher Dashboard</b> • Ranked by loudness (dBFS)</header>
+    <div class="container">
+      <div class="card row">
+        <button id="connect" class="primary">Connect</button>
+        <button id="clear-history" style="margin-left:8px;">Clear History</button>
+        <span id="status" class="badge" style="margin-left:auto;">disconnected</span>
+      </div>
+      <div class="card">
+        <h3>Live Ranking</h3>
+        <div id="list" class="list"></div>
+      </div>
+      <div class="card">
+        <h3>History</h3>
+        <div id="history"><ul id="history-list"></ul></div>
+      </div>
+    </div>
+    <script src="/frontend/scripts/teacher.js"></script>
+  </body>
+</html>
