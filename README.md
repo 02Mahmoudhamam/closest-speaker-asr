@@ -56,13 +56,13 @@ Ideal for **classrooms, group meetings, or any multi-speaker environment** where
 # Run the server
 python -m uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
-##3️⃣ Access the Frontend
+## 3️⃣ Access the Frontend
 
 Student: http://127.0.0.1:8000/frontend/index.html
 
 Teacher: http://127.0.0.1:8000/frontend/teacher.html
 
-##4️⃣ Quick Tests
+## 4️⃣ Quick Tests
 
 Test root endpoint:
 
@@ -73,22 +73,6 @@ Check history endpoint:
 
 Invoke-WebRequest -Uri http://127.0.0.1:8000/history -UseBasicParsing | Select-Object -Expand Content
 
-##📂 Project Structure
-project-root/
-│
-├─ backend/
-│   ├─ app.py               # Main server
-│   ├─ manager.py           # Manages speakers and ranking
-│   ├─ audio_utils.py       # VAD, audio conversion, RMS, noise gate
-│   ├─ asr.py               # ASR interface
-│   └─ .venv/               # Virtual environment
-│
-├─ frontend/
-│   ├─ index.html           # Student interface
-│   ├─ teacher.html         # Teacher interface
-│   └─ client.js            # WebSocket audio streaming
-│
-└─ README.md
 
 ## 💡 Future Enhancements
 
@@ -124,11 +108,13 @@ Designed to run safely without breaking frontend or WebSocket functionality, eve
 
 Additional features can be added without affecting the main logic.
 
-📧 Contact / Support
+## 📧 Contact / Support
 
 For questions, extensions, or technical support:
 Mahmoudhamam892@gmail.com
-- 
+
+
+
 - Install dependencies:
 ```bash
 pip install -r requirements.txt
@@ -151,5 +137,3 @@ project-root/
 │   └─ client.js            # WebSocket audio streaming
 │
 └─ README.md
-
-
