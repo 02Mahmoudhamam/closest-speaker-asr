@@ -49,13 +49,6 @@ Ideal for **classrooms, group meetings, or any multi-speaker environment** where
 
 ### 1️⃣ Requirements
 - Python 3.11+
-- Install dependencies:
-```bash
-pip install -r requirements.txt
-Required packages: webrtcvad or pyannote.audio for VAD.
-
-ASR engine (Whisper, Google, or Azure).
-
 ## 2️⃣ Start the Server
 # Activate virtual environment
 .venv\Scripts\activate
@@ -135,3 +128,28 @@ Additional features can be added without affecting the main logic.
 
 For questions, extensions, or technical support:
 Mahmoudhamam892@gmail.com
+- 
+- Install dependencies:
+```bash
+pip install -r requirements.txt
+Required packages: webrtcvad or pyannote.audio for VAD.
+
+ASR engine (Whisper, Google, or Azure).
+##📂 Project Structure
+project-root/
+│
+├─ backend/
+│   ├─ app.py               # Main server
+│   ├─ manager.py           # Manages speakers and ranking
+│   ├─ audio_utils.py       # VAD, audio conversion, RMS, noise gate
+│   ├─ asr.py               # ASR interface
+│   └─ .venv/               # Virtual environment
+│
+├─ frontend/
+│   ├─ index.html           # Student interface
+│   ├─ teacher.html         # Teacher interface
+│   └─ client.js            # WebSocket audio streaming
+│
+└─ README.md
+
+
